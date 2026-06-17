@@ -228,7 +228,7 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
   padding: 22px 18px 20px;
   width: 100%;
   max-width: 480px;
-  max-height: min(500px, 68vh);
+  max-height: min(430px, 60vh);
   min-height: auto;
   height: auto;
   box-sizing: border-box;
@@ -241,6 +241,7 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
   box-shadow: 0 16px 42px rgba(10, 17, 77, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.14);
   overflow: hidden;
+  accent-color: #00C2CB;
 }
 
 .hero-enquiry-form {
@@ -251,9 +252,10 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
   min-height: 0;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-right: 4px;
+  padding-right: 6px;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.55) transparent;
+  scrollbar-color: rgba(0, 194, 203, 0.85) rgba(20, 10, 70, 0.45);
+  accent-color: #00C2CB;
 }
 
 .hero-enquiry-form::-webkit-scrollbar {
@@ -261,16 +263,18 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
 }
 
 .hero-enquiry-form::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.hero-enquiry-form::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.45);
+  background: rgba(20, 10, 70, 0.45);
   border-radius: 10px;
 }
 
+.hero-enquiry-form::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(106, 13, 173, 0.95) 0%, rgba(0, 194, 203, 0.9) 100%);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 .hero-enquiry-form::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.65);
+  background: linear-gradient(180deg, rgba(122, 27, 189, 0.98) 0%, rgba(26, 212, 220, 0.95) 100%);
 }
 
 .hero-info-bar {
@@ -1844,7 +1848,7 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
   height: 16px;
   min-width: 16px;
   margin-top: 3px;
-  accent-color: #ffd54a;
+  accent-color: #00C2CB;
   background: #fff;
   padding: 0;
   border: none;
@@ -1977,7 +1981,7 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
 
   .hero-enquiry-panel {
     max-width: 540px;
-    max-height: min(520px, 72vh);
+    max-height: min(470px, 64vh);
     padding: 28px 24px 24px;
     min-height: auto;
     border-radius: 22px;
