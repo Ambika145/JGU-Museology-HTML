@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+<script>
+(async () => {
+  const sizes = [[1366, 768], [1536, 864]];
+  const results = [];
+  for (const [w, h] of sizes) {
+    const iframe = document.createElement('iframe');
+    iframe.style.width = w + 'px';
+    iframe.style.height = h + 'px';
+    iframe.src = 'index.html';
+    document.body.appendChild(iframe);
+    await new Promise(r => iframe.onload = r);
+    await new Promise(r => setTimeout(r, 1200));
+    const doc = iframe.contentDocument;
+    const submit = doc.querySelector('.hero-enquiry-panel .submit-btn');
+    const infoBar = doc.querySelector('.hero-info-bar');
+    const laptopImg = doc.querySelector('.hero-image-center .laptop-screen-img');
+    const laptopScreen = doc.querySelector('.hero-image-center .laptop-screen');
+    const heroHeader = doc.querySelector('.hero-header');
+    const submitRect = submit.getBoundingClientRect();
+    const infoRect = infoBar.getBoundingClientRect();
+    const heroRect = heroHeader.getBoundingClientRect();
+    results.push({
+      viewport: `${w}x${h}`,
+      submitBottom: Math.round(submitRect.bottom),
+      infoBarBottom: Math.round(infoRect.bottom),
+      heroBottom: Math.round(heroRect.bottom),
+      fitsInViewport: infoRect.bottom <= h + 1,
+      laptopImg: laptopImg ? { objectFit: getComputedStyle(laptopImg).objectFit, objectPosition: getComputedStyle(laptopImg).objectPosition } : null,
+      laptopScreen: laptopScreen ? { transform: getComputedStyle(laptopScreen).transform, clipPath: getComputedStyle(laptopScreen).clipPath } : null
+    });
+    iframe.remove();
+  }
+  document.body.innerHTML = '<pre>' + JSON.stringify(results, null, 2) + '</pre>';
+})();
+</script>
+</body>
+</html>
