@@ -67,52 +67,9 @@
           </div>
 
           <div class="hero-enquiry-panel">
-            <form class="enquiry-form form-inner hero-enquiry-form" action="#" method="post">
-              <div class="form-group">
-                <input type="text" name="name" placeholder="Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" name="email" placeholder="Email Address*" required>
-              </div>
-              <div class="form-group phone-row">
-                <select name="country_code" aria-label="Country code">
-                  <option value="+91">+91</option>
-                </select>
-                <input type="tel" name="mobile" placeholder="Enter Mobile Number*" required>
-              </div>
-              <div class="form-group">
-                <input type="text" name="otp" placeholder="OTP" required>
-              </div>
-              <div class="form-group form-row">
-                <select name="state" required>
-                  <option value="" disabled selected>Current State*</option>
-                  <option value="haryana">Haryana</option>
-                  <option value="delhi">Delhi</option>
-                  <option value="maharashtra">Maharashtra</option>
-                  <option value="karnataka">Karnataka</option>
-                  <option value="other">Other</option>
-                </select>
-                <select name="city" required>
-                  <option value="" disabled selected>Current City*</option>
-                  <option value="sonipat">Sonipat</option>
-                  <option value="gurgaon">Gurgaon</option>
-                  <option value="delhi">Delhi</option>
-                  <option value="mumbai">Mumbai</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <select name="course" required>
-                  <option value="" disabled selected>Select Course*</option>
-                  <option value="ma-museology">M.A. in Museology and Cultural Heritage</option>
-                </select>
-              </div>
-              <div class="checkbox-row">
-                <input type="checkbox" id="enquiry-consent" name="consent" required>
-                <label for="enquiry-consent">By entering these details, I agree that JGU Online and its associates may contact me with updates and notifications via Email, SMS, WhatsApp, and Voice Call as per the Privacy Policy. This consent overrides any registration under DNC/NDNC.</label>
-              </div>
-              <button type="submit" class="submit-btn npfWidgetButton npfWidget-f2c764c3812b71044805f88bf65c2b5a">SUBMIT</button>
-            </form>
+            <div class="npf-widget-embed npf-widget-embed--hero">
+              <div class="npf_wgts" data-height="400px" data-w="f2c764c3812b71044805f88bf65c2b5a"></div>
+            </div>
           </div>
         </div>
     </div>
@@ -830,57 +787,15 @@
   <div class="enquiry-wrapper">
     <div class="enquiry-card">
       <div class="enquiry-form-panel">
-        <form class="enquiry-form form-inner" action="#" method="post">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Email Address*" required>
-          </div>
-          <div class="form-group phone-row">
-            <select name="country_code" aria-label="Country code">
-              <option value="+91">+91</option>
-            </select>
-            <input type="tel" name="mobile" placeholder="Enter Mobile Number*" required>
-          </div>
-          <div class="form-group">
-            <input type="text" name="otp" placeholder="OTP" required>
-          </div>
-          <div class="form-group form-row">
-            <select name="state" required>
-              <option value="" disabled selected>Current State*</option>
-              <option value="haryana">Haryana</option>
-              <option value="delhi">Delhi</option>
-              <option value="maharashtra">Maharashtra</option>
-              <option value="karnataka">Karnataka</option>
-              <option value="other">Other</option>
-            </select>
-            <select name="city" required>
-              <option value="" disabled selected>Current City*</option>
-              <option value="sonipat">Sonipat</option>
-              <option value="gurgaon">Gurgaon</option>
-              <option value="delhi">Delhi</option>
-              <option value="mumbai">Mumbai</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <select name="course" required>
-              <option value="" disabled selected>Select Course*</option>
-              <option value="ma-museology">M.A. in Museology and Cultural Heritage</option>
-            </select>
-          </div>
-          <div class="checkbox-row">
-            <input type="checkbox" id="enquiry-consent-bottom" name="consent" required>
-            <label for="enquiry-consent-bottom">By entering these details, I agree that JGU Online and its associates may contact me with updates and notifications via Email, SMS, WhatsApp, and Voice Call as per the Privacy Policy. This consent overrides any registration under DNC/NDNC.</label>
-          </div>
-          <button type="submit" class="submit-btn npfWidgetButton npfWidget-f2c764c3812b71044805f88bf65c2b5a">SUBMIT</button>
-        </form>
+        <div class="npf-widget-embed">
+          <div class="npf_wgts" data-height="400px" data-w="f2c764c3812b71044805f88bf65c2b5a"></div>
+        </div>
       </div>
 
       <div class="enquiry-text-panel">
         <h2 class="enquiry-heading">Let&rsquo;s connect and shape your path at JGU!</h2>
         <p class="enquiry-subtext">Reach out to know more about programmes, admissions, and opportunities</p>
+        <button type="button" class="npfWidgetButton npfWidget-f2c764c3812b71044805f88bf65c2b5a enquiry-popup-btn">Enquire Now!</button>
       </div>
     </div>
   </div>
@@ -1069,26 +984,39 @@ document.querySelectorAll(".faq-item").forEach(item => {
   });
 });
 
-const heroEnquiryForm = document.querySelector(".hero-enquiry-form");
-if (heroEnquiryForm) {
-  heroEnquiryForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-  });
-}
-
 const heroEnrollBtn = document.getElementById("heroEnrollBtn");
 if (heroEnrollBtn) {
   heroEnrollBtn.addEventListener("click", function () {
-    const npfBtn = document.querySelector(".npfWidget-f2c764c3812b71044805f88bf65c2b5a");
-    if (npfBtn) npfBtn.click();
+    const heroPanel = document.querySelector(".hero-enquiry-panel");
+    if (heroPanel) {
+      heroPanel.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
   });
 }
 
 </script>
 
-  <script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in8.nopaperforms.com/emwgts.js"; document.body.appendChild(s);</script>
+<script type="text/javascript">
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
+  document.body.appendChild(s);
+</script>
 
-<script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script><script>let npfWf2c764c3812b71044805f88bf65c2b5a = new NpfWidgetsInit(        {'widgetId':'f2c764c3812b71044805f88bf65c2b5a',    'baseurl':'widgets.in8.nopaperforms.com',    'formTitle':'Enquiry Form',    'titleColor':'#FF0033',    'backgroundColor':'#ddd',    'iframeHeight':'500px',     'buttonbgColor':'#4c79dc',     'buttonTextColor':'#FFF',    });</script>
+<script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
+<script>
+  let npfWf2c764c3812b71044805f88bf65c2b5a = new NpfWidgetsInit({
+    widgetId: "f2c764c3812b71044805f88bf65c2b5a",
+    baseurl: "widgets.in8.nopaperforms.com",
+    formTitle: "Enquiry Form",
+    titleColor: "#FF0033",
+    backgroundColor: "#ddd",
+    iframeHeight: "500px",
+    buttonbgColor: "#4c79dc",
+    buttonTextColor: "#FFF"
+  });
+</script>
 
 
 <!-- Facebook Pixel Code -->

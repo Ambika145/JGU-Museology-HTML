@@ -225,15 +225,14 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
 .hero-enquiry-panel {
   background: linear-gradient(137deg, #6A0DAD 0%, #5a1a9e 38%, #3d4db8 68%, #00C2CB 100%);
   border-radius: 20px;
-  padding: 22px 18px 20px;
+  padding: clamp(16px, 2vw, 22px);
   width: 100%;
-  max-width: 480px;
-  max-height: min(430px, 60vh);
+  max-width: 100%;
   min-height: auto;
   height: auto;
   box-sizing: border-box;
   align-self: end;
-  justify-self: center;
+  justify-self: end;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -244,37 +243,22 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
   accent-color: #00C2CB;
 }
 
-.hero-enquiry-form {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+.hero-enquiry-panel .npf-widget-embed {
   width: 100%;
-  min-height: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 6px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 194, 203, 0.85) rgba(20, 10, 70, 0.45);
-  accent-color: #00C2CB;
+  min-width: 0;
 }
 
-.hero-enquiry-form::-webkit-scrollbar {
-  width: 6px;
+.hero-enquiry-panel .npf_wgts {
+  width: 100% !important;
+  max-width: 100%;
+  min-height: 400px;
 }
 
-.hero-enquiry-form::-webkit-scrollbar-track {
-  background: rgba(20, 10, 70, 0.45);
-  border-radius: 10px;
-}
-
-.hero-enquiry-form::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgba(106, 13, 173, 0.95) 0%, rgba(0, 194, 203, 0.9) 100%);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.hero-enquiry-form::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, rgba(122, 27, 189, 0.98) 0%, rgba(26, 212, 220, 0.95) 100%);
+.hero-enquiry-panel .npf_wgts iframe {
+  width: 100% !important;
+  max-width: 100%;
+  border: 0;
+  display: block;
 }
 
 .hero-info-bar {
@@ -1753,10 +1737,49 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
 
 .enquiry-form-panel {
   background: linear-gradient(137deg, #6A0DAD 0%, #5a1a9e 38%, #3d4db8 68%, #00C2CB 100%);
-  padding: 48px 42px 52px;
+  padding: clamp(24px, 4vw, 48px) clamp(20px, 3vw, 42px);
   display: flex;
   align-items: stretch;
   justify-content: center;
+  min-width: 0;
+}
+
+.npf-widget-embed {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.enquiry-form-panel .npf_wgts {
+  width: 100% !important;
+  max-width: 100%;
+  min-height: 400px;
+}
+
+.enquiry-form-panel .npf_wgts iframe {
+  width: 100% !important;
+  max-width: 100%;
+  border: 0;
+  display: block;
+}
+
+.enquiry-popup-btn {
+  margin-top: 28px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffe55b 0%, #ffd000 100%);
+  color: #0a114d;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.enquiry-popup-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
 }
 
 .enquiry-form-panel .form-inner,
@@ -1980,17 +2003,11 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
   }
 
   .hero-enquiry-panel {
-    max-width: 540px;
-    max-height: min(470px, 64vh);
-    padding: 28px 24px 24px;
+    width: 100%;
+    max-width: 100%;
+    padding: clamp(20px, 2vw, 28px);
     min-height: auto;
     border-radius: 22px;
-  }
-
-  .hero-enquiry-panel input,
-  .hero-enquiry-panel select {
-    padding: 16px 18px;
-    font-size: 16px;
   }
 
   .hero-info-bar-inner {
