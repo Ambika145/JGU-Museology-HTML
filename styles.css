@@ -542,11 +542,14 @@ background: linear-gradient(155deg, #350e82 0%, #6A0DAD 42%, #00C2CB 100%);  -we
 
 .fee-card {
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   border: 2px solid #ffffff;
   border-radius: 18px;
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
