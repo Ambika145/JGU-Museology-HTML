@@ -1,22 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M.A. in Museology - O.P. Jindal Global University</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://jguonline.edu.in/public/frontend/assets/img/favicon.ico">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-  <!-- External CSS -->
-  <link rel="stylesheet" href="styles.css" />
-<!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-N94ZC5LW');</script> 
-<!-- End Google Tag Manager -->
-     <!-- Meta Pixel Code -->
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N94ZC5LW');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Meta Pixel Code -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -33,241 +27,910 @@
     src="https://www.facebook.com/tr?id=1243343920376799&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-</head>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>M.A. in Museology - O.P. Jindal Global University</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://jguonline.edu.in/public/frontend/assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
+    <!-- Critical: hero layout; enquiry form scrolls inside card only -->
+    <style>
+      .hero-section {
+        overflow-x: clip !important;
+        overflow-y: visible !important;
+        background: #ffffff !important;
+        position: relative;
+        z-index: 10;
+        isolation: isolate;
+      }
+
+      .hero-info-bar {
+        background: linear-gradient(90deg, #1a237e 0%, #4527a0 32%, #7b1fa2 62%, #00acc1 100%) !important;
+        position: relative !important;
+        z-index: 2 !important;
+        flex: none !important;
+        flex-shrink: 0 !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .hero-bottom-bars {
+        position: relative !important;
+        z-index: 2 !important;
+      }
+
+      .hero-section .hero-container {
+        position: relative !important;
+        z-index: 3 !important;
+      }
+
+      .hero-scholarship-bar {
+        background: #3f2a8c !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+        padding: 0.55rem 1rem !important;
+      }
+
+      .hero-scholarship-text {
+        margin: 0 !important;
+        color: #fff !important;
+        font-size: clamp(0.78rem, 2.8vw, 0.95rem) !important;
+        font-weight: 600 !important;
+        line-height: 1.4 !important;
+      }
+
+      .features-section {
+        position: relative !important;
+        z-index: 1 !important;
+        background: linear-gradient(180deg, #ffffff 0%, #faf6fc 55%, #f5f0fa 100%) !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        clear: both;
+      }
+
+      /* Hero button + logos — inline so changes show even when CSS is cached */
+      .hero-section .header-logo-jgu {
+        height: 5.75rem !important;
+        max-height: 5.75rem !important;
+        width: auto !important;
+      }
+
+      .hero-section .header-logo-jsbf {
+        height: 6.5rem !important;
+        max-height: 6.5rem !important;
+        width: auto !important;
+      }
+
+      .hero-section .btn-apply-now {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin-top: 1.25rem !important;
+        margin-bottom: 0.75rem !important;
+        padding: 0.9rem 2.85rem !important;
+        background-color: #ffffff !important;
+        background-image:
+          linear-gradient(#ffffff, #ffffff),
+          linear-gradient(135deg, #1a237e 0%, #3949ab 22%, #7b1fa2 55%, #00acc1 100%) !important;
+        background-origin: border-box !important;
+        background-clip: padding-box, border-box !important;
+        border: 3px solid transparent !important;
+        border-radius: 50px !important;
+        color: #4a148c !important;
+        font-weight: 800 !important;
+        font-size: clamp(0.92rem, 1.2vw, 1.05rem) !important;
+        letter-spacing: 0.06em !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important;
+        box-shadow: 0 6px 18px rgba(74, 20, 140, 0.16) !important;
+        flex-shrink: 0 !important;
+        position: relative !important;
+        z-index: 12 !important;
+        align-self: flex-start !important;
+        cursor: pointer !important;
+      }
+
+      .hero-section .hero-title {
+        font-size: clamp(2rem, 3.4vw, 2.85rem) !important;
+        line-height: 1.2 !important;
+        overflow: visible !important;
+        padding-top: 0.12em !important;
+      }
+
+      .hero-section .hero-subtitle {
+        font-size: clamp(0.95rem, 1.4vw, 1.15rem) !important;
+        font-weight: 800 !important;
+      }
+
+      .hero-section .hero-subtitle-line {
+        display: block !important;
+      }
+
+      .hero-section .hero-right {
+        max-width: 30rem !important;
+        z-index: 20 !important;
+      }
+
+      .hero-section .hero-enquiry-card {
+        width: 100% !important;
+        min-height: 22rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+      }
+
+      .hero-section .hero-enquiry-card h3 {
+        font-size: 1.25rem !important;
+        flex-shrink: 0 !important;
+      }
+
+      .hero-section .hero-npf-scroll {
+        flex: 1 1 auto !important;
+        min-height: 0 !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        overscroll-behavior: contain !important;
+        -webkit-overflow-scrolling: touch !important;
+      }
+
+      @media screen and (max-width: 991px) {
+        .hero-section {
+          min-height: auto !important;
+          max-height: none !important;
+          overflow-x: clip !important;
+          overflow-y: visible !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .hero-section .header-logo-jgu,
+        .hero-section .header-logo-jsbf {
+          height: 3.5rem !important;
+          max-height: 3.5rem !important;
+        }
+
+        .hero-section .btn-apply-now {
+          padding: 0.85rem 2.4rem !important;
+          font-size: clamp(0.88rem, 2.8vw, 1rem) !important;
+          border-width: 3px !important;
+          align-self: center !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+
+        .hero-section .hero-right {
+          width: min(100%, 30rem) !important;
+          max-width: min(100%, 30rem) !important;
+          margin-bottom: clamp(1.25rem, 4vw, 2rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card {
+          min-height: 18rem !important;
+          max-height: min(32rem, 78vh) !important;
+        }
+
+        .hero-section .hero-npf-scroll {
+          max-height: min(360px, 54vh) !important;
+          overflow-y: auto !important;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        /* SCALE-INVARIANT HERO.
+           Everything is sized in vh (bounded by clamp) so the layout occupies the
+           same physical fraction of the screen at 100% / 125% / 150% Windows
+           scaling — scaling only remaps CSS px of one physical screen, and vh
+           tracks that physical screen. The hero is pinned to exactly one viewport
+           with the info bar on the bottom grid row, so it is always fully visible
+           and nothing crops. */
+        .hero-section {
+          display: grid !important;
+          grid-template-rows: minmax(0, 1fr) auto !important;
+          grid-template-columns: minmax(0, 1fr) !important;
+          height: 100dvh !important;
+          min-height: 100dvh !important;
+          max-height: 100dvh !important;
+          box-sizing: border-box !important;
+          overflow: hidden !important;
+          --hero-form-bar-gap: clamp(0.75rem, 2.2vh, 2rem);
+          --hero-image-info-gap: 0;
+          --hero-form-iframe-h: 100%;
+          --hero-img-max: min(84vh, 52rem);
+        }
+
+        .hero-section .hero-container {
+          grid-row: 1 !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          max-width: min(1560px, 94vw) !important;
+          overflow: hidden !important;
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: flex-start !important;
+          padding-top: clamp(0.4rem, 1.4vh, 1rem) !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+        }
+
+        .hero-section .hero-header {
+          flex: 0 0 auto !important;
+          padding-bottom: clamp(0.2rem, 0.8vh, 0.625rem) !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(4.2rem, 9.5vh, 6rem) !important;
+          max-height: clamp(4.2rem, 9.5vh, 6rem) !important;
+          width: auto !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(5.1rem, 15.8vh, 10rem) !important;
+          max-height: clamp(5.1rem, 15.8vh, 10rem) !important;
+          width: auto !important;
+        }
+
+        .hero-section .hero-main {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow: hidden !important;
+          align-items: end !important;
+          padding-bottom: 0 !important;
+          margin-bottom: 0 !important;
+          box-sizing: border-box !important;
+        }
+
+        .hero-left {
+          overflow: visible !important;
+          align-self: center !important;
+          justify-content: center !important;
+          min-height: 0 !important;
+          margin-top: 0 !important;
+          padding-top: 0.35rem !important;
+          padding-bottom: 0.35rem !important;
+          max-height: 100% !important;
+          box-sizing: border-box !important;
+          position: relative !important;
+          z-index: 4 !important;
+        }
+
+        .hero-left .btn-apply-now,
+        .hero-section .btn-apply-now {
+          margin-bottom: 1rem !important;
+          z-index: 12 !important;
+          position: relative !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.6rem, 0.4rem + 2.1vw, 3.15rem) !important;
+          line-height: 1.22 !important;
+          overflow: visible !important;
+          padding-top: 0.32em !important;
+          margin-top: 0 !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.5rem, 1.7vh, 1.1rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.8rem, 0.3rem + 0.95vw, 1.65rem) !important;
+          margin-top: clamp(0.75rem, 2.4vh, 1.55rem) !important;
+          line-height: 1.4 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.8rem, 0.3rem + 0.85vw, 1.45rem) !important;
+          margin-top: clamp(0.6rem, 1.9vh, 1.25rem) !important;
+          line-height: 1.55 !important;
+        }
+
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.85rem, 2.6vh, 1.8rem) !important;
+          padding: clamp(0.75rem, 2vh, 1.25rem) clamp(2.4rem, 4.1vh, 3.75rem) !important;
+          font-size: clamp(0.85rem, 0.35rem + 0.6vw, 1.4rem) !important;
+        }
+
+        .hero-info-bar {
+          grid-row: 2 !important;
+          margin-top: var(--hero-image-info-gap) !important;
+          flex: none !important;
+          flex-shrink: 0 !important;
+          display: block !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          padding: clamp(0.85rem, 2.3vh, 1.55rem) 0 !important;
+        }
+
+        .hero-section .hero-info-inner {
+          max-width: min(1560px, 94vw) !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(1rem, 2.6vh, 1.45rem) !important;
+        }
+
+        .hero-center {
+          align-self: end !important;
+          height: 100% !important;
+          min-height: 0 !important;
+          transform: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          align-items: flex-end !important;
+          line-height: 0 !important;
+          overflow: hidden !important;
+        }
+
+        .hero-student-stack {
+          height: 100% !important;
+          max-height: 100% !important;
+          align-items: flex-end !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          overflow: hidden !important;
+        }
+
+        .hero-student-img {
+          max-height: 100% !important;
+          max-width: 100% !important;
+          width: auto !important;
+          height: auto !important;
+          object-position: bottom center !important;
+          transform: none !important;
+          margin: 0 !important;
+        }
+
+        .hero-right {
+          max-width: min(30rem, 34vw) !important;
+          max-height: 100% !important;
+          min-height: 0 !important;
+          overflow: hidden !important;
+          z-index: 20 !important;
+          align-self: stretch !important;
+          justify-self: end !important;
+          display: flex !important;
+          flex-direction: column !important;
+          margin-top: clamp(0.5rem, 2vh, 1.75rem) !important;
+          margin-bottom: var(--hero-form-bar-gap) !important;
+        }
+
+        .hero-enquiry-card {
+          flex: 1 1 auto !important;
+          max-height: 100% !important;
+          min-height: 0 !important;
+          display: flex !important;
+          flex-direction: column !important;
+          overflow: hidden !important;
+          padding: clamp(0.9rem, 2.4vh, 1.6rem) clamp(0.9rem, 1.6vw, 1.5rem) clamp(0.75rem, 1.6vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card h3 {
+          font-size: clamp(1.25rem, 3.2vh, 1.9rem) !important;
+          margin-bottom: clamp(0.6rem, 1.8vh, 1.3rem) !important;
+          flex-shrink: 0 !important;
+        }
+
+        .hero-npf-scroll {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        .hero-section .hero-right {
+          max-width: min(32rem, 32vw) !important;
+        }
+      }
+
+      /* Laptop / short-viewport (<=800px tall, >=992px wide): slightly tighter
+         left column so title + Apply button always sit above the info bar. */
+      @media screen and (min-width: 992px) and (max-height: 800px) {
+        .hero-section {
+          --hero-form-bar-gap: clamp(0.5rem, 1.8vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-container {
+          padding-top: clamp(0.3rem, 1vh, 0.6rem) !important;
+        }
+
+        .hero-section .hero-header {
+          padding-bottom: 0.15rem !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(3.2rem, 8vh, 4.4rem) !important;
+          max-height: clamp(3.2rem, 8vh, 4.4rem) !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(3.6rem, 11vh, 5.2rem) !important;
+          max-height: clamp(3.6rem, 11vh, 5.2rem) !important;
+        }
+
+        .hero-left {
+          padding-top: 0.15rem !important;
+          padding-bottom: 0.15rem !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.4rem, 0.3rem + 1.8vw, 2.5rem) !important;
+          line-height: 1.18 !important;
+          padding-top: 0.1em !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.3rem, 1vh, 0.6rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.78rem, 0.25rem + 0.8vw, 1.15rem) !important;
+          margin-top: clamp(0.4rem, 1.4vh, 0.85rem) !important;
+          line-height: 1.32 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.78rem, 0.25rem + 0.75vw, 1.05rem) !important;
+          margin-top: clamp(0.3rem, 1vh, 0.6rem) !important;
+          line-height: 1.4 !important;
+        }
+
+        .hero-left .btn-apply-now,
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.5rem, 1.6vh, 0.95rem) !important;
+          margin-bottom: 0.3rem !important;
+          padding: clamp(0.5rem, 1.4vh, 0.8rem) clamp(1.8rem, 3vh, 2.6rem) !important;
+          font-size: clamp(0.8rem, 0.3rem + 0.55vw, 1rem) !important;
+        }
+
+        .hero-info-bar {
+          padding: clamp(0.55rem, 1.6vh, 1rem) 0 !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(0.85rem, 0.3rem + 0.7vw, 1.15rem) !important;
+        }
+      }
+
+      /* 150% Windows scaling only (very short viewport ≈627px). 100% (~940px) and
+         125% (~752px) are ABOVE this breakpoint and stay exactly as they are.
+         Here we scale the hero down just enough that the whole left column
+         (heading + text + button) and the info bar fit without clipping. */
+      @media screen and (min-width: 992px) and (max-height: 680px) {
+        .hero-section {
+          --hero-form-bar-gap: clamp(0.5rem, 1.6vh, 1rem) !important;
+          --hero-img-max: min(76vh, 30rem) !important;
+          /* Form is taller than the (shrunk) card → the card's scroll area shows
+             its own scrollbar so the whole form incl. SUBMIT is reachable. */
+          --hero-form-iframe-h: 32rem !important;
+        }
+
+        .hero-section .hero-header {
+          padding-bottom: 0.2rem !important;
+        }
+
+        .hero-section .header-logo-jgu {
+          height: clamp(3rem, 8.6vh, 5rem) !important;
+          max-height: clamp(3rem, 8.6vh, 5rem) !important;
+        }
+
+        .hero-section .header-logo-jsbf {
+          height: clamp(3.4rem, 9.6vh, 5.6rem) !important;
+          max-height: clamp(3.4rem, 9.6vh, 5.6rem) !important;
+        }
+
+        .hero-section .hero-title {
+          font-size: clamp(1.35rem, 4.5vh, 2rem) !important;
+          line-height: 1.2 !important;
+          overflow: visible !important;
+          padding-top: 0.12em !important;
+        }
+
+        .hero-section .hero-title-rule {
+          margin-top: clamp(0.3rem, 1vh, 0.5rem) !important;
+        }
+
+        .hero-section .hero-subtitle {
+          font-size: clamp(0.78rem, 2vh, 0.98rem) !important;
+          margin-top: clamp(0.4rem, 1.3vh, 0.7rem) !important;
+          line-height: 1.32 !important;
+        }
+
+        .hero-section .hero-description {
+          font-size: clamp(0.76rem, 1.85vh, 0.95rem) !important;
+          margin-top: clamp(0.3rem, 1vh, 0.55rem) !important;
+          line-height: 1.4 !important;
+        }
+
+        .hero-section .btn-apply-now {
+          margin-top: clamp(0.45rem, 1.4vh, 0.8rem) !important;
+          padding: clamp(0.5rem, 1.3vh, 0.75rem) clamp(1.8rem, 3vh, 2.4rem) !important;
+          font-size: clamp(0.78rem, 1.9vh, 0.95rem) !important;
+        }
+
+        .hero-section .hero-info-item {
+          font-size: clamp(0.82rem, 2.1vh, 1.05rem) !important;
+        }
+
+        .hero-section .hero-enquiry-card h3 {
+          font-size: clamp(1.1rem, 2.7vh, 1.5rem) !important;
+          margin-bottom: clamp(0.4rem, 1.3vh, 0.85rem) !important;
+        }
+
+        /* Enquiry card fits the viewport; the form scrolls inside it, and the
+           card keeps its rounded corners (incl. the bottom) — the scroll area is
+           inset by padding and its bottom corners are rounded so the tall iframe
+           never squares off the card edge. */
+        .hero-section .hero-right {
+          align-self: stretch !important;
+          max-height: 100% !important;
+          overflow: hidden !important;
+        }
+
+        .hero-section .hero-enquiry-card {
+          max-height: 100% !important;
+          overflow: hidden !important;
+          border-radius: 1.25rem !important;
+          padding-bottom: clamp(0.85rem, 2.2vh, 1.25rem) !important;
+        }
+
+        .hero-section .hero-npf-scroll {
+          flex: 1 1 auto !important;
+          min-height: 0 !important;
+          max-height: 100% !important;
+          overflow-y: auto !important;
+          overflow-x: hidden !important;
+          border-bottom-left-radius: 0.9rem !important;
+          border-bottom-right-radius: 0.9rem !important;
+        }
+
+        .hero-section .hero-enquiry-card .npf_wgts,
+        .hero-section .hero-enquiry-card .npf_wgts iframe {
+          height: 32rem !important;
+          max-height: 32rem !important;
+          min-height: 32rem !important;
+        }
+      }
+
+    </style>
+</head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N94ZC5LW"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <header class="hero-header">
-    <div class="hero-header-inner">
-        <section class="logo-section">
-          <div class="logo-container logo-left">
-            <img src="assets/logo-1.png" alt="Jindal Global University Logo" class="logo-img">
-          </div>
-          <div class="logo-container logo-right">
-            <img src="assets/logo-4.png" alt="Constitution Museum Logo" class="logo-img">
-          </div>
-        </section>
 
-        <div class="hero-main">
-          <div class="hero-content-left">
-            <div class="hero-text-block">
-              <h1 class="hero-title">
-                <span class="hero-title-line1"><span class="hero-title-black">M.A. in</span> <span class="hero-title-gradient">Museology</span></span><br>
-                <span class="hero-title-line2 hero-title-gradient">and Cultural Heritage</span>
-              </h1>
-              <p class="hero-subtitle">
-                <span class="hero-subtitle-line1">Championing Sustainable</span><br>
-                <span class="hero-subtitle-line2">Cultural Heritage Leadership</span>
-              </p>
-              <button type="button" class="hero-enroll-btn" id="heroEnrollBtn"><span class="hero-enroll-btn-text">ENROLL NOW</span></button>
+<section class="hero-section section-global">
+  <div class="container hero-container">
+    <div class="hero-header">
+      <div class="header-logos">
+        <img src="assets/logo-1.png" class="header-logo-img header-logo-jgu" alt="Jindal Global University Logo">
+        <img src="assets/logo-4.png" class="header-logo-img header-logo-constitution" alt="Constitution Museum Logo">
+      </div>
+    </div>
+
+    <div class="hero-main">
+      <div class="hero-bg-circuit" aria-hidden="true"></div>
+
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="hero-title-line">
+            <span class="hero-title-base">M.A. in </span><span class="hero-title-gradient">Museology</span>
+          </span>
+          <span class="hero-title-gradient">
+            <span class="hero-title-line">and Cultural Heritage</span>
+          </span>
+        </h1>
+        <div class="hero-title-rule" aria-hidden="true"></div>
+        <p class="hero-subtitle">
+          <span class="hero-subtitle-line">Championing Sustainable</span>
+          <span class="hero-subtitle-line">Cultural Heritage Leadership</span>
+        </p>
+        <button type="button" class="npfWidgetButton npfWidget-f2c764c3812b71044805f88bf65c2b5a hero-npf-trigger" tabindex="-1" aria-hidden="true">ENROLL NOW</button>
+        <a href="#" class="btn-apply-now" id="heroApplyNowBtn" role="button">ENROLL NOW &nbsp;→</a>
+      </div>
+
+      <div class="hero-center">
+        <div class="hero-student-stack">
+          <img src="assets/image copy 3.png" alt="Museology Student" class="hero-student-img">
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-enquiry-card">
+          <h3>ENQUIRE HERE!</h3>
+          <div class="hero-npf-scroll">
+            <div class="npf_wgts" data-height="400px" data-w="f2c764c3812b71044805f88bf65c2b5a"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom-bars">
+    <div class="hero-info-bar">
+      <div class="hero-info-inner">
+        <div class="hero-info-item">
+          <strong>Postgraduate Degree</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Duration: 1 Year</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Batch Starts: March 2027</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Fully Online Programme</strong>
+        </div>
+        <div class="hero-info-item">
+          <strong>Jodo EMI Options</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features-section section-global">
+  <div class="container features-container">
+    <h2 class="features-title">What’s in it for you?</h2>
+
+    <div class="features-slider-wrap">
+      <button class="features-arrow prev" type="button" aria-label="Previous feature">&#10094;</button>
+
+      <div class="features-slider-viewport" id="featuresSlider">
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/interdisciplinary-curricullum.png" alt="Interdisciplinary Curriculum" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Interdisciplinary Curriculum</h3>
+              <p class="card-text">Experience a unique blend of art, history, culture, technology, and heritage studies, preparing you for the evolving demands of the museum and heritage sectors.​</p>
             </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/digital-innovation.png" alt="Digital Innovation" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Digital Innovation</h3>
+              <p class="card-text">The programme trains students in emerging technologies such as virtual reality, artificial intelligence, and digital archiving, enabling them to shape future museum practices.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/experientiel-learning.png" alt="Experiential Learning" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Experiential Learning</h3>
+              <p class="card-text">Gain hands-on exposure through exhibition design labs, conservation projects, field visits, and real-world curatorial assignments.​</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/professional-internship.png" alt="Professional Internship" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Professional Internship</h3>
+              <p class="card-text">Complete a 120-hour industry internship with renowned cultural institutions like the JGU Constitution Museum, Jaipur Centre for the Arts, INTACH, and the Kiran Nadar Museum of Art, making you job-ready from day one.​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/contemprorary-perspectives.png" alt="Contemporary Perspectives" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Contemporary Perspectives</h3>
+              <p class="card-text">Develop critical insights into decolonization, inclusivity, sustainability, and global heritage futures while building strong curatorial and audience engagement capabilities.​​</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <img src="assets/global-recognition.png" alt="Global Recognition and Career Readiness" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Global Recognition and Career Readiness</h3>
+              <p class="card-text">The IOE-approved programme features an international curriculum and strong career support, enhancing employability across global sectors like museums, galleries, archives, and cultural institutions.​</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-slide">
+          <div class="feature-card">
+            <img src="assets/online-learning.png" alt="Flexible 100% Online Learning" class="card-img">
+            <div class="card-overlay">
+              <h3 class="card-title">Flexible 100% Online Learning</h3>
+              <p class="card-text">The interactive online mode allows students to learn at their own pace while benefiting from mentorship and access to career resources.​</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="mobile-globe">
-              <div class="laptop-hero-wrapper">
-                <img src="assets/image copy 3.png" alt="Museology Student" class="hero-person-img">
-                <div class="laptop-screen">
-                  <img src="assets/image copy 2.png" alt="Cultural Heritage" class="laptop-screen-img">
+      <button class="features-arrow next" type="button" aria-label="Next feature">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<section class="programme-overview-section section-global" id="about">
+  <div class="container programme-overview-container">
+    <div class="programme-overview-inner">
+      <div class="programme-overview-content">
+        <h2 class="programme-overview-heading">M.A. in Museology and Cultural Heritage</h2>
+        <div class="programme-overview-copy">
+          <p class="programme-overview-text">
+                Elevate your expertise with the <strong>M.A. in Museology and Cultural Heritage</strong>,
+                a dynamic programme blending art history, cultural studies, and cutting-edge digital
+                technologies like virtual reality and AI. This interdisciplinary degree prepares you
+                to address contemporary challenges such as decolonization, inclusivity, and
+                sustainability, equipping you to lead and innovate in museums and cultural institutions worldwide.
+          </p>
+          <p class="programme-overview-text">
+                With a <strong>fully online format</strong> and <strong>hands-on internships</strong> at prestigious heritage organizations,
+                gain practical experience alongside academic knowledge in this <strong>1-year, 60-credit</strong> programme.
+                Offered by JGU, an <strong>Institution of Eminence,</strong> this programme prepares you for dynamic careers
+                as curators, exhibition designers, and digital heritage experts.
+          </p>
+        </div>
+      </div>
+
+      <div class="programme-overview-media">
+        <figure class="programme-overview-campus">
+          <img src="assets/cultural-heritage.png" alt="Museology Student" class="programme-overview-img">
+        </figure>
+        <div class="programme-overview-side">
+          <a href="#" class="programme-learn-more-btn npfWidgetButton npfWidget-f2c764c3812b71044805f88bf65c2b5a">
+            <span class="programme-learn-more-text">Learn More</span>
+            <span class="programme-learn-more-arrow" aria-hidden="true">&#8592;</span>
+          </a>
+          <figure class="programme-overview-finance">
+            <img src="assets/cultural-heritage.png" alt="Globe Image" class="programme-overview-img">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="skills-section section-global">
+  <div class="container skills-container">
+    <h2 class="skills-section-title">Skills You’ll Acquire</h2>
+
+    <div class="skills-carousel-wrap">
+      <div class="skills-carousel-viewport">
+        <div class="skills-carousel-track" id="skillsCarouselTrack">
+          <div class="skills-slide skills-slide--three">
+            <div class="skill-card">
+              <div class="skill-card-inner">
+                <div class="skill-icon-wrap"><img class="skill-icon" src="assets/Curatorial-Expertise.svg" alt=""></div>
+                <div class="skill-card-body">
+                  <h3 class="skill-card-title">Curatorial Expertise</h3>
+                  <hr class="skill-card-line">
+                  <p class="skill-card-desc">Acquire skills in managing and preserving museum collections, including artifact cataloguing, handling, and ethical stewardship.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-inner">
+                <div class="skill-icon-wrap"><img class="skill-icon" src="assets/Exhibition-Design.svg" alt=""></div>
+                <div class="skill-card-body">
+                  <h3 class="skill-card-title">Exhibition Design & Interpretation</h3>
+                  <hr class="skill-card-line">
+                  <p class="skill-card-desc">Learn to design and execute compelling exhibitions that effectively communicate cultural narratives and engage diverse audiences.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-inner">
+                <div class="skill-icon-wrap"><img class="skill-icon" src="assets/Heritage-Conservation-Techniques.svg" alt=""></div>
+                <div class="skill-card-body">
+                  <h3 class="skill-card-title">Heritage Conservation Techniques</h3>
+                  <hr class="skill-card-line">
+                  <p class="skill-card-desc">Master scientific methods and sustainable practices to conserve and restore cultural artifacts and heritage sites.</p>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="hero-image-center">
-            <div class="laptop-hero-wrapper">
-              <img src="assets/image copy 3.png" alt="Museology Student" class="hero-person-img">
-              <div class="laptop-screen">
-                <img src="assets/image copy 2.png" alt="Cultural Heritage" class="laptop-screen-img">
+          <div class="skills-slide skills-slide--three">
+            <div class="skill-card">
+              <div class="skill-card-inner">
+                <div class="skill-icon-wrap"><img class="skill-icon" src="assets/Digital-Heritage-Technologies.svg" alt=""></div>
+                <div class="skill-card-body">
+                  <h3 class="skill-card-title">Digital Heritage Technologies</h3>
+                  <hr class="skill-card-line">
+                  <p class="skill-card-desc">Develop proficiency in digital archiving, virtual reality, AI-based interpretation, and multimedia tools for innovative museum experiences.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-inner">
+                <div class="skill-icon-wrap"><img class="skill-icon" src="assets/Research-Scholarly-Communication.svg" alt=""></div>
+                <div class="skill-card-body">
+                  <h3 class="skill-card-title">Research & Scholarly Communication</h3>
+                  <hr class="skill-card-line">
+                  <p class="skill-card-desc">Build advanced research capabilities, data analysis, and academic writing skills for heritage documentation and publication.</p>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-card-inner">
+                <div class="skill-icon-wrap"><img class="skill-icon" src="assets/Museum-Management-Outreach.svg" alt=""></div>
+                <div class="skill-card-body">
+                  <h3 class="skill-card-title">Museum Management & Outreach</h3>
+                  <hr class="skill-card-line">
+                  <p class="skill-card-desc">Gain competencies in museum administration, fundraising, marketing, public engagement, and policy development.</p>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="hero-enquiry-panel">
-            <div class="npf-widget-embed npf-widget-embed--hero">
-              <div class="npf_wgts" data-height="400px" data-w="f2c764c3812b71044805f88bf65c2b5a"></div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="hero-info-bar">
-      <div class="hero-info-bar-inner">
-        <div class="info-item"><p>Postgraduate<br><strong>Degree</strong></p></div>
-        <div class="divider"></div>
-        <div class="info-item"><p>Duration:<br><strong>1 Year</strong></p></div>
-        <div class="divider"></div>
-        <div class="info-item"><p>Batch Starts:<br><strong>March 2027</strong></p></div>
-        <div class="divider"></div>
-        <div class="info-item info-item-full-bold"><p><strong>Fully Online<br>Programme</strong></p></div>
-        <div class="divider"></div>
-        <div class="info-item info-item-full-bold"><p><strong>Jodo EMI<br>Options</strong></p></div>
-      </div>
-    </div>
-  </header>
-
-  <div class="container">
-    <h2 class="title-center">What’s in it for you?</h2>
-
-    <!-- Swiper Slider -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/interdisciplinary-curricullum.png');">
-        <div class="feature-text">
-          <h3>Interdisciplinary Curriculum</h3>
-          <p>Experience a unique blend of art, history, culture, technology, and heritage studies, preparing you for the evolving demands of the museum and heritage sectors.​</p>
         </div>
       </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/digital-innovation.png'); ">
-        <div class="feature-text">
-          <h3>Digital Innovation</h3>
-          <p>The programme trains students in emerging technologies such as virtual reality, artificial intelligence, and digital archiving, enabling them to shape future museum practices.​</p>
-        </div>
+      <div class="skills-dots" id="skillsDots" role="tablist" aria-label="Skills slides">
+        <button type="button" class="skills-dot active" data-index="0" aria-label="Slide 1" aria-selected="true"></button>
+        <button type="button" class="skills-dot" data-index="1" aria-label="Slide 2" aria-selected="false"></button>
       </div>
     </div>
-
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/experientiel-learning.png');">
-        <div class="feature-text">
-          <h3>Experiential Learning</h3>
-          <p>Gain hands-on exposure through exhibition design labs, conservation projects, field visits, and real-world curatorial assignments.​</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/professional-internship.png');">
-        <div class="feature-text">
-          <h3>Professional Internship</h3>
-          <p>Complete a 120-hour industry internship with renowned cultural institutions like the JGU Constitution Museum, Jaipur Centre for the Arts, INTACH, and the Kiran Nadar Museum of Art, making you job-ready from day one.​</p>
-        </div>
-      </div>
-    </div>
-
-      <!-- Slide 5 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/contemprorary-perspectives.png');">
-        <div class="feature-text">
-          <h3>Contemporary Perspectives</h3>
-          <p>Develop critical insights into decolonization, inclusivity, sustainability, and global heritage futures while building strong curatorial and audience engagement capabilities.​​</p>
-        </div>
-      </div>
-    </div>
-
-      <!-- Slide 6 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/global-recognition.png');">
-        <div class="feature-text">
-          <h3>Global Recognition and Career Readiness</h3>
-          <p>The IOE-approved programme features an international curriculum and strong career support, enhancing employability across global sectors like museums, galleries, archives, and cultural institutions.​</p>
-        </div>
-      </div>
-    </div>
-
-      <!-- Slide 7 -->
-    <div class="swiper-slide">
-      <div class="feature-card" style="background-image: url('assets/online-learning.png');">
-        <div class="feature-text">
-          <h3>Flexible 100% Online Learning</h3>
-          <p>The interactive online mode allows students to learn at their own pace while benefiting from mentorship and access to career resources.​</p>
-        </div>
-      </div>
-    </div>
-
   </div>
-
-  <!-- Pagination Dots -->
-  <div class="swiper-pagination"></div>
-</div>
-
-
-</div>
-
-  <!-- HERO SECTION -->
-<section class="hero-section">
-    <div class="hero-container">
-        
-        <!-- Left Image Section -->
-        <div class="hero-image">
-            <img src="assets/cultural-heritage.png" alt="Museology Student">
-        </div>
-
-        <!-- Right Text Section -->
-        <div class="hero-text">
-            <h1>M.A. in Museology and Cultural Heritage</h1>
-
-              <!-- Mobile Globe Image -->
-      <div class="mobile-globe">
-        <img src="assets/cultural-heritage.png" alt="Globe Image">
-      </div>
-
-            <p>
-                Elevate your expertise with the <strong>M.A. in Museology and Cultural Heritage</strong>, 
-                a dynamic programme blending art history, cultural studies, and cutting-edge digital 
-                technologies like virtual reality and AI. This interdisciplinary degree prepares you 
-                to address contemporary challenges such as decolonization, inclusivity, and 
-                sustainability, equipping you to lead and innovate in museums and cultural institutions worldwide.
-            </p>
-
-            <p>
-                With a <strong>fully online format</strong> and <strong>hands-on internships</strong> at prestigious heritage organizations, 
-                gain practical experience alongside academic knowledge in this <strong>1-year, 60-credit</strong> programme. 
-                Offered by JGU, an <strong>Institution of Eminence,</strong> this programme prepares you for dynamic careers 
-                as curators, exhibition designers, and digital heritage experts.
-            </p>
-        </div>
-
-    </div>
 </section>
 
-<h2 class="title-center">Tuition &amp; Financing</h2>
-<section class="fee-structure-section">
-  <div class="fee-structure-inner">
-    <p class="fees-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
-    <div class="fee-card">
-      <table class="fee-table">
-        <colgroup>
-          <col>
-          <col>
-          <col>
-        </colgroup>
-        <thead>
-          <tr>
-            <th>Fee</th>
-            <th>Amount</th>
-            <th>Due Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td data-label="Fee">Registration Amount</td>
-            <td data-label="Amount">INR 25,000</td>
-            <td data-label="Due Date">Upon acceptance of Offer Letter</td>
-          </tr>
-          <tr>
-            <td data-label="Fee">Instalment 1</td>
-            <td data-label="Amount">INR 1,25,000</td>
-            <td data-label="Due Date">Before Batch Commencement</td>
-          </tr>
-          <tr>
-            <td data-label="Fee">Instalment 2</td>
-            <td data-label="Amount">INR 1,25,000</td>
-            <td data-label="Due Date">By 15th July 2027</td>
-          </tr>
-        </tbody>
-      </table>
+<section class="know-more-section section-global">
+  <div class="container know-more-container">
+    <div class="know-more-inner">
+      <div class="know-more-media">
+        <img src="assets/heritage-img.png" alt="Heritage sculpture" class="know-more-img">
+      </div>
+      <div class="know-more-content">
+        <h3 class="know-more-title">Need to know more?</h3>
+        <p class="know-more-lead">Explore the <strong>M.A. in Museology and Cultural Heritage</strong> in detail by downloading the full course brochure.</p>
+        <p class="know-more-text">Get comprehensive insights on curriculum, faculty, learning outcomes, and career pathways.</p>
+        <a href="#" class="btn know-more-cta font-weight-bold npfWidgetButton npfWidget-f2c764c3812b71044805f88bf65c2b5a">DOWNLOAD BROCHURE →</a>
+      </div>
     </div>
-    <div class="payment-options-block">
+  </div>
+</section>
+
+<section class="tuition-section section-global" id="fees">
+  <div class="tuition-panel tuition-panel--fees" id="tuitionPanel">
+    <img class="tuition-panel-bg" id="tuitionPanelBg" src="assets/career-outcome-bg.png" alt="" aria-hidden="true">
+    <div class="tuition-panel-overlay" aria-hidden="true"></div>
+    <div class="tuition-content">
+      <div class="tuition-tabs" role="tablist" aria-label="Tuition information">
+        <button type="button" class="tuition-tab active" role="tab" id="tuitionTabBtnFees" aria-selected="true" aria-controls="tuitionTabFees" data-tab="fees">
+          <span class="tuition-tab-text"><span class="tuition-tab-word">Tuition</span> <span class="tuition-tab-word tuition-tab-word--gradient">&amp; Financing</span></span>
+        </button>
+      </div>
+
+      <div class="tuition-tab-panel active" id="tuitionTabFees" role="tabpanel" aria-labelledby="tuitionTabBtnFees">
+        <p class="tuition-total-line"><strong>Total Tuition Fee: INR 2,75,000</strong></p>
+
+        <div class="tuition-table-wrap">
+          <table class="tuition-table">
+            <thead>
+              <tr>
+                <th>Fee</th>
+                <th>Amount</th>
+                <th>Due Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Registration Amount</td>
+                <td>INR 25,000</td>
+                <td>Upon acceptance of Offer Letter</td>
+              </tr>
+              <tr>
+                <td>Instalment 1</td>
+                <td>INR 1,25,000</td>
+                <td>Before Batch Commencement</td>
+              </tr>
+              <tr>
+                <td>Instalment 2</td>
+                <td>INR 1,25,000</td>
+                <td>By 15th July 2027</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+<div class="payment-options-block">
       <div class="payment-options-header">
         <p class="payment-options-eyebrow">Flexible Financing</p>
         <h3 class="payment-options-title">Tuition Fee &amp; Payment Options</h3>
@@ -339,148 +1002,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </section>
     </div>
+      </div>
+    </div>
   </div>
 </section>
-<h2 class="title-center">Highlights</h2>
-  <section class="highlights-section" style="background-image: url('assets/highlights-bg.png');background-size: cover;
-  background-position: center;background-repeat: no-repeat;">
-    
 
-    <div class="highlights-container">
-
-        <div class="highlight-card">
-            <img src="assets/icon2.svg" alt="Training Icon" class="card-icon">
-            <h3>Certified & Credit-Bearing Training</h3>
-            <p>Complete rigorous training modules that award academic credits for every completed session. These credit-based certifications not only strengthen your credentials but also boost employability and provide a foundation for advanced study.</p>
-        </div>
-
-        <div class="highlight-card">
-            <img src="assets/icon3.svg" alt="Webinars Icon" class="card-icon">
-            <h3>Exclusive Webinars & Industry Connect</h3>
-            <p>Participate in curated webinars and live sessions with renowned curators, conservators, and heritage professionals. These events connect you directly to museum leaders and experts, unlocking mentorship and career opportunities.</p>
-        </div>
-
-        <div class="highlight-card">
-            <img src="assets/icon4.svg" alt="Community Icon" class="card-icon">
-            <h3>Network with a Diverse Community</h3>
-            <p>Collaborate with peers from varied backgrounds to develop your portfolio through group exhibitions, mock auctions, and gallery installations. Build a vibrant professional network with access to global mentors and cultural partners.</p>
-        </div>
-
-        <div class="highlight-card">
-            <img src="assets/icon5.svg" alt="Institutions Icon" class="card-icon">
-            <h3>Pathways to Leading Institutions</h3>
-            <p>Benefit from internship-linked training and career-focused workshops, paving the way to placements and jobs with top museums, galleries, and heritage organizations. Transform hands-on learning into lasting career success.</p>
-        </div>
-
+<section class="why-choose-section section-global">
+  <div class="why-choose-header">
+    <div class="container why-choose-header-inner">
+      <h2 class="why-choose-title">Highlights</h2>
     </div>
-</section>
-<section class="skills-section">
-    <h2 class="title-center">Skills You’ll Acquire</h2>
+  </div>
 
-    <div class="skills-grid">
+  <div class="why-choose-body">
+    <img class="why-choose-bg" src="assets/highlights-bg.png" alt="" aria-hidden="true">
+    <div class="why-choose-overlay" aria-hidden="true"></div>
 
-        <div class="skill-box">
-            <div class="skill-icon-wrap">
-                <div class="skill-icon-circle">
-                    <img src="assets/Curatorial-Expertise.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-head-text">
-                <h3>Curatorial Expertise</h3>
-                <span class="skill-divider"></span>
-            </div>
-            <p>Acquire skills in managing and preserving museum collections, including artifact cataloguing, handling, and ethical stewardship.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="skill-icon-wrap">
-                <div class="skill-icon-circle">
-                    <img src="assets/Exhibition-Design.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-head-text">
-                <h3>Exhibition Design & Interpretation</h3>
-                <span class="skill-divider"></span>
-            </div>
-            <p>Learn to design and execute compelling exhibitions that effectively communicate cultural narratives and engage diverse audiences.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="skill-icon-wrap">
-                <div class="skill-icon-circle">
-                    <img src="assets/Heritage-Conservation-Techniques.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-head-text">
-                <h3>Heritage Conservation Techniques</h3>
-                <span class="skill-divider"></span>
-            </div>
-            <p>Master scientific methods and sustainable practices to conserve and restore cultural artifacts and heritage sites.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="skill-icon-wrap">
-                <div class="skill-icon-circle">
-                    <img src="assets/Digital-Heritage-Technologies.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-head-text">
-                <h3>Digital Heritage Technologies</h3>
-                <span class="skill-divider"></span>
-            </div>
-            <p>Develop proficiency in digital archiving, virtual reality, AI-based interpretation, and multimedia tools for innovative museum experiences.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="skill-icon-wrap">
-                <div class="skill-icon-circle">
-                    <img src="assets/Research-Scholarly-Communication.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-head-text">
-                <h3>Research & Scholarly Communication</h3>
-                <span class="skill-divider"></span>
-            </div>
-            <p>Build advanced research capabilities, data analysis, and academic writing skills for heritage documentation and publication.</p>
-        </div>
-
-        <div class="skill-box">
-            <div class="skill-icon-wrap">
-                <div class="skill-icon-circle">
-                    <img src="assets/Museum-Management-Outreach.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-head-text">
-                <h3>Museum Management & Outreach</h3>
-                <span class="skill-divider"></span>
-            </div>
-            <p>Gain competencies in museum administration, fundraising, marketing, public engagement, and policy development.</p>
-        </div>
-
-    </div>
-</section>
-
-<section class="info-section">
-    <div class="left">
-      <h2>Need to know more?</h2>
-      <div class="mobile-globe info-mobile-image">
-        <img src="assets/heritage-img.png" alt="Heritage sculpture">
+    <div class="container why-choose-cards-wrap">
+      <div class="why-choose-grid">
+        <article class="why-choose-card">
+          <div class="why-choose-card-icon">
+            <img src="assets/icon2.svg" alt="" aria-hidden="true" class="why-choose-icon-img">
+          </div>
+          <h3 class="why-choose-card-title">Certified & Credit-Bearing Training</h3>
+          <p class="why-choose-card-text">Complete rigorous training modules that award academic credits for every completed session. These credit-based certifications not only strengthen your credentials but also boost employability and provide a foundation for advanced study.</p>
+        </article>
+        <article class="why-choose-card">
+          <div class="why-choose-card-icon">
+            <img src="assets/icon3.svg" alt="" aria-hidden="true" class="why-choose-icon-img">
+          </div>
+          <h3 class="why-choose-card-title">Exclusive Webinars & Industry Connect</h3>
+          <p class="why-choose-card-text">Participate in curated webinars and live sessions with renowned curators, conservators, and heritage professionals. These events connect you directly to museum leaders and experts, unlocking mentorship and career opportunities.</p>
+        </article>
+        <article class="why-choose-card">
+          <div class="why-choose-card-icon">
+            <img src="assets/icon4.svg" alt="" aria-hidden="true" class="why-choose-icon-img">
+          </div>
+          <h3 class="why-choose-card-title">Network with a Diverse Community</h3>
+          <p class="why-choose-card-text">Collaborate with peers from varied backgrounds to develop your portfolio through group exhibitions, mock auctions, and gallery installations. Build a vibrant professional network with access to global mentors and cultural partners.</p>
+        </article>
+        <article class="why-choose-card">
+          <div class="why-choose-card-icon">
+            <img src="assets/icon5.svg" alt="" aria-hidden="true" class="why-choose-icon-img">
+          </div>
+          <h3 class="why-choose-card-title">Pathways to Leading Institutions</h3>
+          <p class="why-choose-card-text">Benefit from internship-linked training and career-focused workshops, paving the way to placements and jobs with top museums, galleries, and heritage organizations. Transform hands-on learning into lasting career success.</p>
+        </article>
       </div>
-      <div class="info-copy">
-        <p>
-          Explore the <strong>M.A. in Museology and Cultural Heritage</strong> in detail by downloading the full course brochure.
-        </p>
-        <p>Get comprehensive insights on curriculum, faculty, learning outcomes, and career pathways.</p>
-      </div>
-      <button type="button" class="info-brochure-btn"><span class="info-brochure-btn-text">DOWNLOAD BROCHURE &rarr;</span></button>
     </div>
-
-    <div class="right">
-        <img src="assets/heritage-img.png" alt="Heritage sculpture">
-    </div>
+  </div>
 </section>
 
-<!-- Museology Compare Table -->
 <div class="museology-compare-wrapper">
   <h2 class="museology-heading">
     How does the <span>M.A. in Museology and <br/>Cultural Heritage</span> at 
@@ -566,336 +1138,317 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </table>
 </div>
 
-<!-- Career Outcome Section -->
-<section class="career-outcomes-section" style="background-image: url('assets/career-outcome-bg.png');background-size: cover;
-  background-position: center;background-repeat: no-repeat;">
+<section class="career-pathways-section section-global">
+  <div class="container career-pathways-container">
+    <div class="career-pathways-panel">
+      <img class="career-pathways-bg" src="assets/career-outcome-bg.png" alt="" aria-hidden="true">
+      <div class="career-pathways-overlay" aria-hidden="true"></div>
+      <div class="career-pathways-inner career-pathways-inner--stacked">
+        <h2 class="career-pathways-title" title="Career Outcomes of M.A. in Museology and Cultural Heritage from JGU –">Career<br>Outcomes</h2>
 
-  <div class="career-left">
-    <h2>
-      Career Outcomes of M.A. in Museology and Cultural Heritage from JGU –
-    </h2>
-  </div>
-
-  <div class="career-right">
-
-    <!-- WRAPPER FOR BOTH ROWS -->
-    <div class="career-slider-wrapper">
-
-      <!-- 1st ROW -->
-      <div class="career-row" id="row1">
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/Museum-Gallery-Curator.svg" alt="curator icon" />
-          </span>
-           Museum/Gallery Curator
-          </h3>
-          <p>Take on leadership roles in managing art, history, and heritage collections; design exhibits, oversee conservation, and engage in acquisitions.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/Heritage-Manager-Consultant.svg" alt="curator icon" />
-          </span>
-           Heritage Manager/<br/>Consultant
-          </h3>
-          <p>Direct heritage conservation projects for museums, archives, government bodies, or NGOs, advising on preservation and restoration.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/Digital-Heritage-Specialist.svg" alt="curator icon" />
-          </span>
-           Digital Heritage Specialist
-          </h3>
-          <p>Manage digital archiving, virtual exhibition development, and the integration of AI and VR within museums and heritage organizations.​​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/Conservation-Restoration-Specialist.svg" alt="curator icon" />
-          </span>
-           Conservation & Restoration Specialist
-          </h3>
-          <p>Apply scientific and artistic skills to conserve, restore, and maintain artifacts and historic structures in museums, galleries, and heritage sites.​</p>
-        </div>
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/Marketing-Communications-Specialist.svg" alt="curator icon" />
-          </span>
-          Marketing & Communications Specialist
-          </h3>
-          <p>Drive museum branding, digital marketing, and community outreach, helping institutions grow their audience and impact.​</p>
+        <div class="career-pathways-cards">
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Museum-Gallery-Curator.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Museum/Gallery Curator</h3>
+            <p class="career-pathway-card-text">Take on leadership roles in managing art, history, and heritage collections; design exhibits, oversee conservation, and engage in acquisitions.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Heritage-Manager-Consultant.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Heritage Manager/ Consultant</h3>
+            <p class="career-pathway-card-text">Direct heritage conservation projects for museums, archives, government bodies, or NGOs, advising on preservation and restoration.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Digital-Heritage-Specialist.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Digital Heritage Specialist</h3>
+            <p class="career-pathway-card-text">Manage digital archiving, virtual exhibition development, and the integration of AI and VR within museums and heritage organizations.​​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Conservation-Restoration-Specialist.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Conservation & Restoration Specialist</h3>
+            <p class="career-pathway-card-text">Apply scientific and artistic skills to conserve, restore, and maintain artifacts and historic structures in museums, galleries, and heritage sites.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Marketing-Communications-Specialist.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Marketing & Communications Specialist</h3>
+            <p class="career-pathway-card-text">Drive museum branding, digital marketing, and community outreach, helping institutions grow their audience and impact.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Exhibition-Programme-Designer.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Exhibition & Programme Designer</h3>
+            <p class="career-pathway-card-text">Create educational, cultural, and public engagement programmes for museums, festivals, and heritage sites, crafting experiences for diverse audiences.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Researcher-Documentation-Expert.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Researcher/ Documentation Expert</h3>
+            <p class="career-pathway-card-text">Work with think tanks, universities, or cultural trusts to document and interpret cultural heritage, publish research, and support heritage education initiatives.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Education-Outreach-Officer.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Education & Outreach Officer</h3>
+            <p class="career-pathway-card-text">Lead learning programmes, docent training, and public engagement in museums, encouraging community participation and cultural literacy.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Cultural-Events-Programmes-Coordinator.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Cultural Events & Programmes Coordinator</h3>
+            <p class="career-pathway-card-text">Plan and manage exhibitions, festivals, conferences, and educational activities for cultural institutions and heritage organizations.​</p>
+          </article>
+          <article class="career-pathway-card">
+            <div class="career-pathway-icon">
+              <img src="assets/Heritage-Entrepreneur.svg" alt="" aria-hidden="true">
+            </div>
+            <h3 class="career-pathway-card-title">Heritage Entrepreneur</h3>
+            <p class="career-pathway-card-text">Launch cultural startups, consultancies, or social enterprises focused on museum innovation, digital heritage, and creative partnerships.</p>
+          </article>
         </div>
       </div>
-
-      <!-- 2nd ROW -->
-      <div class="career-row" id="row2">
-        <div class="career-card"> 
-          <h3>
-          <span class="icon">
-            <img src="assets/Exhibition-Programme-Designer.svg" alt="curator icon" />
-          </span>
-          Exhibition & Programme Designer
-          </h3>
-          <p>Create educational, cultural, and public engagement programmes for museums, festivals, and heritage sites, crafting experiences for diverse audiences.​</p>
-        </div>
-        <div class="career-card">
-          <h3>
-          <span class="icon">
-            <img src="assets/Researcher-Documentation-Expert.svg" alt="curator icon" />
-          </span>
-          Researcher/<br/>Documentation Expert
-          </h3>
-          <p>Work with think tanks, universities, or cultural trusts to document and interpret cultural heritage, publish research, and support heritage education initiatives.​</p>
-        </div>
-        <div class="career-card">
-           <h3>
-          <span class="icon">
-            <img src="assets/Education-Outreach-Officer.svg" alt="curator icon" />
-          </span>
-          Education & Outreach Officer
-          </h3>
-          <p>Lead learning programmes, docent training, and public engagement in museums, encouraging community participation and cultural literacy.​</p>
-        </div>
-        <div class="career-card">
-          <h3>
-          <span class="icon">
-            <img src="assets/Cultural-Events-Programmes-Coordinator.svg" alt="curator icon" />
-          </span>
-          Cultural Events & Programmes Coordinator
-          </h3>
-          <p>Plan and manage exhibitions, festivals, conferences, and educational activities for cultural institutions and heritage organizations.​</p>
-        </div>
-        <div class="career-card">
-          <h3>
-          <span class="icon">
-            <img src="assets/Heritage-Entrepreneur.svg" alt="curator icon" />
-          </span>
-          Heritage Entrepreneur
-          </h3>
-          <p>Launch cultural startups, consultancies, or social enterprises focused on museum innovation, digital heritage, and creative partnerships.</p>
-        </div>
-      </div>
-
     </div>
-
-    <!-- BUTTONS -->
-    <div class="career-controls">
-      <button id="prevBtn">◀</button>
-      <div class="career-progress"><div id="progressBar"></div></div>
-      <button id="nextBtn">▶</button>
-    </div>
-
   </div>
 </section>
 
-<!-- Faculty Section -->
-
-<section class="faculty-section">
-  <h2 class="faculty-heading">Faculty</h2>
-  <p class="faculty-subheading">Learn from Industry-Experienced Faculty</p>
-
-  <div class="faculty-wrapper">
-
-    <!-- Card 1 -->
-    <div class="faculty-card">
-      <div class="faculty-img">
-        <img src="assets/Sriram-Prasad.png" alt="Faculty Image">
-      </div>
-      <h3>Sriram Prasad</h3>
-      <p>
-        Assistant Professor & Assistant Director, The Constitution Museum and the Rights and Freedoms Academy
-      </p>
+<section class="faculty-section section-global" id="faculty">
+  <div class="container faculty-container">
+    <div class="faculty-header">
+      <h2 class="faculty-title">
+        <span class="faculty-title-meet">Faculty</span>
+      </h2>
+      <p class="faculty-subtitle" style="text-align:center;max-width:48rem;margin:0.75rem auto 0;">Learn from Industry-Experienced Faculty</p>
     </div>
 
-    <!-- Card 2 -->
-    <div class="faculty-card">
-      <div class="faculty-img">
-        <img src="assets/Vibhav-Kapoor.png" alt="Faculty Image">
-      </div>
-      <h3>Vibhav Kapoor</h3>
-      <p>
-       Assistant Professor of Practice & Assistant Director, Centre for Culture, Heritage, and Museum Studies
-      </p>
-    </div>
+    <div class="faculty-slider-wrap">
+      <button class="faculty-arrow prev" type="button" aria-label="Previous faculty">&#10094;</button>
+      <button class="faculty-arrow next" type="button" aria-label="Next faculty">&#10095;</button>
 
-    <!-- Card 3 -->
-    <div class="faculty-card">
-      <div class="faculty-img">
-        <img src="assets/Sukanya-Sharma.png" alt="Faculty Image">
+      <div class="faculty-track" id="facultyTrack">
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/Sriram-Prasad.png" alt="Sriram Prasad">
+          </div>
+          <h5 class="faculty-name">Sriram Prasad</h5>
+          <p class="faculty-role">Assistant Professor & Assistant Director, The Constitution Museum and the Rights and Freedoms Academy</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/Vibhav-Kapoor.png" alt="Vibhav Kapoor">
+          </div>
+          <h5 class="faculty-name">Vibhav Kapoor</h5>
+          <p class="faculty-role">Assistant Professor of Practice & Assistant Director, Centre for Culture, Heritage, and Museum Studies</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/Sukanya-Sharma.png" alt="Sukanya Sharma">
+          </div>
+          <h5 class="faculty-name">Sukanya Sharma</h5>
+          <p class="faculty-role">Assistant Professor, Jindal School of Design and Architecture (JSDA)</p>
+        </article>
+        <article class="faculty-member">
+          <div class="faculty-photo-frame">
+            <img class="faculty-photo" src="assets/Pia-Bakshi.png" alt="Pia Bakshi">
+          </div>
+          <h5 class="faculty-name">Pia Bakshi</h5>
+          <p class="faculty-role">Assistant Professor of Practice, Centre for Writing Studies<br>
+        Assistant Director, Centre for Culture, Heritage, &amp; Museum Studies</p>
+        </article>
       </div>
-      <h3>Sukanya Sharma</h3>
-      <p>
-        Assistant Professor, Jindal School of Design and Architecture (JSDA)
-      </p>
     </div>
-
-    <!-- Card 4 -->
-    <div class="faculty-card">
-      <div class="faculty-img">
-        <img src="assets/Pia-Bakshi.png" alt="Faculty Image">
-      </div>
-      <h3>Pia Bakshi</h3>
-      <p>
-        Assistant Professor of Practice, Centre for Writing Studies<br>
-        Assistant Director, Centre for Culture, Heritage, &amp; Museum Studies
-      </p>
-    </div>
-
   </div>
 </section>
 
-<!-- Recognitions and Accreditations Section -->
-<section class="recognition-section">
-  <h2 class="rec-heading">Recognitions and Accreditations</h2>
-
-  <div class="recognition-grid">
-    <div class="rec-card">
-      <div class="rec-card-media">
+<section class="recognition-section section-global">
+  <img class="recognition-bg" src="assets/Recognition-bg.png" alt="" aria-hidden="true">
+  <div class="recognition-container">
+    <h2 class="recognition-title">Recognitions and Accreditations</h2>
+    <div class="recognition-grid" id="recognitionGrid">
+      <div class="rec-card rec-card-small">
         <img src="assets/recognition-4.png" alt="QS Young University Rankings 2022 - Top 150 Under 50 Globally">
       </div>
-    </div>
-
-    <div class="rec-card">
-      <div class="rec-card-media">
+      <div class="rec-card rec-card-small">
         <img src="assets/recognition-2.png" alt="Institution of Eminence by the Ministry of Education Government of India">
       </div>
-    </div>
-
-    <div class="rec-card rec-card--center">
-      <div class="rec-card-media">
-        <img src="assets/image_copy_7-removebg-preview.png" alt="JGU Global Rankings - India's No. 1 Ranked University - QS World University Rankings by Subject 2026">
+      <div class="rec-card rec-card-main">
+        <img src="assets/image_copy_7-removebg-preview.png" alt="JGU Global Rankings - India&#x27;s No. 1 Ranked University - QS World University Rankings by Subject 2026">
       </div>
-    </div>
-
-    <div class="rec-card">
-      <div class="rec-card-media">
+      <div class="rec-card rec-card-small">
         <img src="assets/image copy 5.png" alt="Ranked No. 1 Private University in India - QS World University Rankings (2021 - 2023)">
       </div>
-    </div>
-
-    <div class="rec-card">
-      <div class="rec-card-media">
+      <div class="rec-card rec-card-small">
         <img src="assets/image copy.png" alt="Ranked No. 1 Globally for Online Learning THE 2024">
       </div>
     </div>
+    <div class="recognition-dots" id="recognitionDots" role="tablist" aria-label="Recognition slides"></div>
   </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="faq-section">
-  <div class="faq-inner">
-    <h2 class="faq-heading">Frequently Asked Questions <span>(FAQs)</span></h2>
+<section class="faq-section section-global" id="faq">
+  <div class="container faq-container">
+    <h2 class="faq-title">
+      <span class="faq-title-main">Frequently Asked Questions</span><span class="faq-title-sub"> (FAQs)</span>
+    </h2>
 
-    <div class="faq-container">
-      <div class="faq-item active">
-        <button class="faq-question" type="button" aria-expanded="true">
-          <span class="faq-question-text">What is the duration and format of the M.A. in Museology and Cultural Heritage at JGU Online?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>The programme lasts 12 months and is delivered 100% online, combining self-paced modules, live interactive sessions, and hands-on projects for flexible, immersive learning.</p>
-        </div>
+    <div class="faq-grid">
+      <div class="faq-col">
+        <div class="accordion faq-accordion" id="faqLeft">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-toggle="collapse" data-target="#faq1">
+                What is the duration and format of the M.A. in Museology and Cultural Heritage at JGU Online?
+              </button>
+            </h2>
+            <div id="faq1" class="collapse show" data-parent="#faqLeft">
+              <div class="accordion-body">
+                The programme lasts 12 months and is delivered 100% online, combining self-paced modules, live interactive sessions, and hands-on projects for flexible, immersive learning.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq2">
+                Who is eligible to apply for this programme?
+              </button>
+            </h2>
+            <div id="faq2" class="collapse" data-parent="#faqLeft">
+              <div class="accordion-body">
+                Applicants must hold a recognized undergraduate degree. A strong academic record and proficiency in English are required. Admission may also involve an entrance exam and personal interview.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq3">
+                Is this programme IOE-approved and globally recognized?
+              </button>
+            </h2>
+            <div id="faq3" class="collapse" data-parent="#faqLeft">
+              <div class="accordion-body">
+                Yes, the programme is fully approved by IOE and recognized, making it internationally valid for further studies and employment opportunities.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq4">
+                Do students get practical exposure or internship opportunities?
+              </button>
+            </h2>
+            <div id="faq4" class="collapse" data-parent="#faqLeft">
+              <div class="accordion-body">
+                Yes, students undertake a mandatory 120-hour industry internship at leading museums and heritage organizations as part of the curriculum.
+              </div>
+            </div>
+          </div>
+</div>
       </div>
+      <div class="faq-col">
+        <div class="accordion faq-accordion" id="faqRight">
 
-      <div class="faq-item">
-        <button class="faq-question" type="button" aria-expanded="false">
-          <span class="faq-question-text">Who is eligible to apply for this programme?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>Applicants must hold a recognized undergraduate degree. A strong academic record and proficiency in English are required. Admission may also involve an entrance exam and personal interview.</p>
-        </div>
-      </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq100">
+                What career paths can graduates pursue?
+              </button>
+            </h2>
+            <div id="faq100" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                Graduates can work as museum curators, heritage consultants, digital heritage specialists, conservationists, educators, researchers, cultural event managers, and more, in India and abroad.
+              </div>
+            </div>
+          </div>
 
-      <div class="faq-item">
-        <button class="faq-question" type="button" aria-expanded="false">
-          <span class="faq-question-text">Is this programme IOE-approved and globally recognized?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, the programme is fully approved by IOE and recognized, making it internationally valid for further studies and employment opportunities.</p>
-        </div>
-      </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq101">
+                How can students finance their education?
+              </button>
+            </h2>
+            <div id="faq101" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                JGU provides flexible payment options, including affordable EMIs, to support students in managing their tuition fees.
+              </div>
+            </div>
+          </div>
 
-      <div class="faq-item">
-        <button class="faq-question" type="button" aria-expanded="false">
-          <span class="faq-question-text">Do students get practical exposure or internship opportunities?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>Yes, students undertake a mandatory 120-hour industry internship at leading museums and heritage organizations as part of the curriculum.</p>
-        </div>
-      </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq102">
+                Is the faculty experienced?
+              </button>
+            </h2>
+            <div id="faq102" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                Courses are taught by acclaimed curators, conservationists, and academic leaders actively engaged in the heritage sector.
+              </div>
+            </div>
+          </div>
 
-      <div class="faq-item">
-        <button class="faq-question" type="button" aria-expanded="false">
-          <span class="faq-question-text">What career paths can graduates pursue?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>Graduates can work as museum curators, heritage consultants, digital heritage specialists, conservationists, educators, researchers, cultural event managers, and more, in India and abroad.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" type="button" aria-expanded="false">
-          <span class="faq-question-text">How can students finance their education?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>JGU provides flexible payment options, including affordable EMIs, to support students in managing their tuition fees.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" type="button" aria-expanded="false">
-          <span class="faq-question-text">Is the faculty experienced?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>Courses are taught by acclaimed curators, conservationists, and academic leaders actively engaged in the heritage sector.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" type="button" aria-expanded="false">
-          <span class="faq-question-text">What support services are available during and after the programme?</span>
-          <span class="faq-icon" aria-hidden="true"></span>
-        </button>
-        <div class="faq-answer">
-          <p>Students benefit from career counseling, placement assistance, alumni networking, global guest sessions, and ongoing mentorship.</p>
-        </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#faq103">
+                What support services are available during and after the programme?
+              </button>
+            </h2>
+            <div id="faq103" class="collapse" data-parent="#faqRight">
+              <div class="accordion-body">
+                Students benefit from career counseling, placement assistance, alumni networking, global guest sessions, and ongoing mentorship.
+              </div>
+            </div>
+          </div>
+</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="enquire-section">
-  <h1 class="title-center">Enquire Now!</h1>
-  <div class="enquiry-wrapper">
-    <div class="enquiry-card">
-      <div class="enquiry-form-panel">
-        <div class="npf-widget-embed">
+<section class="enquire-section section-global" id="enquire">
+  <div class="container enquire-container">
+    <h2 class="enquire-heading">Enquire Now!</h2>
+    <div class="enquire-card">
+      <div class="enquire-form-panel">
+        <div class="enquire-npf-scroll">
           <div class="npf_wgts" data-height="400px" data-w="f2c764c3812b71044805f88bf65c2b5a"></div>
         </div>
       </div>
-
-      <div class="enquiry-text-panel">
-        <h2 class="enquiry-heading">Let&rsquo;s connect and shape your path at JGU!</h2>
-        <p class="enquiry-subtext">Reach out to know more about programmes, admissions, and opportunities</p>
-        <button type="button" class="npfWidgetButton npfWidget-f2c764c3812b71044805f88bf65c2b5a enquiry-popup-btn">Enquire Now!</button>
+      <div class="enquire-info-panel">
+        <div class="info-section">
+          <h2>Let’s connect and shape your path at JGU!</h2>
+          <p class="info-text">Reach out to know more about programmes, admissions, and opportunities</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
- <footer class="footer-center">
-  <p class="fw-bold">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">var s=document.createElement("script"); s.type="text/javascript"; s.async=true; s.src="https://widgets.in8.nopaperforms.com/emwgts.js"; document.body.appendChild(s);</script>
+<script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
+<script>let npfWf2c764c3812b71044805f88bf65c2b5a=new NpfWidgetsInit({'widgetId':'f2c764c3812b71044805f88bf65c2b5a','baseurl':'widgets.in8.nopaperforms.com','formTitle':'Enquiry Form','titleColor':'#FF0033','backgroundColor':'#ddd','iframeHeight':'500px','buttonbgColor':'#4c79dc','buttonTextColor':'#FFF'});</script>
+
+<footer class="site-footer">
+  <p class="text-center font-weight-bold">
     © 2026 O.P. Jindal Global University. All Rights Reserved
-    
   </p>
 </footer>
 
@@ -911,213 +1464,3 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </body>
 </html>
-
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    breakpoints: {
-      640: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    }
-  });
-
-// Career Outcome JS
-document.addEventListener("DOMContentLoaded", function () {
-  let position = 0;
-
-  const wrapper = document.querySelector(".career-slider-wrapper");
-  const rows = [
-    document.getElementById("row1"),
-    document.getElementById("row2")
-  ].filter(Boolean);
-
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-  const progressBar = document.getElementById("progressBar");
-  const mobileQuery = window.matchMedia("(max-width: 768px)");
-  const tabletQuery = window.matchMedia("(max-width: 992px)");
-
-  if (!wrapper || !rows.length || !nextBtn || !prevBtn) return;
-
-  function getGap() {
-    const styles = window.getComputedStyle(rows[0]);
-    return parseFloat(styles.columnGap || styles.gap) || 20;
-  }
-
-  function getVisibleCount() {
-    if (mobileQuery.matches) return 1;
-    if (tabletQuery.matches) return 2;
-    return 3;
-  }
-
-  function getTotalCards() {
-    return rows[0] ? rows[0].children.length : 0;
-  }
-
-  function getMaxShift() {
-    return Math.max(0, getTotalCards() - getVisibleCount());
-  }
-
-  function isMobileMode() {
-    return mobileQuery.matches;
-  }
-
-  function getCardWidth() {
-    const visible = getVisibleCount();
-    const gap = getGap();
-    return (wrapper.clientWidth - gap * (visible - 1)) / visible;
-  }
-
-  function layoutCards() {
-    const cards = wrapper.querySelectorAll(".career-card");
-    const gap = getGap();
-
-    if (isMobileMode()) {
-      const mobileWidth = Math.min(wrapper.clientWidth * 0.9, 300);
-
-      cards.forEach(function (card) {
-        card.style.flex = "0 0 " + mobileWidth + "px";
-        card.style.width = mobileWidth + "px";
-        card.style.minWidth = mobileWidth + "px";
-        card.style.maxWidth = mobileWidth + "px";
-      });
-
-      rows.forEach(function (row) {
-        row.style.transform = "none";
-      });
-
-      position = 0;
-      if (progressBar) progressBar.style.width = "0%";
-      return;
-    }
-
-    const cardWidth = getCardWidth();
-
-    cards.forEach(function (card) {
-      card.style.flex = "0 0 " + cardWidth + "px";
-      card.style.width = cardWidth + "px";
-      card.style.minWidth = cardWidth + "px";
-      card.style.maxWidth = cardWidth + "px";
-    });
-
-    position = Math.min(position, getMaxShift());
-    slide();
-  }
-
-  function slide() {
-    if (isMobileMode()) return;
-
-    const gap = getGap();
-    const step = getCardWidth() + gap;
-
-    rows.forEach(function (row) {
-      row.style.transform = "translateX(-" + (position * step) + "px)";
-    });
-
-    const maxShift = getMaxShift();
-    if (progressBar) {
-      progressBar.style.width = maxShift === 0 ? "100%" : ((position / maxShift) * 100) + "%";
-    }
-  }
-
-  nextBtn.addEventListener("click", function () {
-    if (isMobileMode()) return;
-    if (position < getMaxShift()) {
-      position++;
-      slide();
-    }
-  });
-
-  prevBtn.addEventListener("click", function () {
-    if (isMobileMode()) return;
-    if (position > 0) {
-      position--;
-      slide();
-    }
-  });
-
-  mobileQuery.addEventListener("change", function () {
-    position = 0;
-    layoutCards();
-  });
-
-  tabletQuery.addEventListener("change", function () {
-    position = 0;
-    layoutCards();
-  });
-
-  window.addEventListener("resize", layoutCards);
-
-  layoutCards();
-});
-
-// FAQ Section JS
-document.querySelectorAll(".faq-item").forEach(item => {
-  const question = item.querySelector(".faq-question");
-
-  question.addEventListener("click", () => {
-    const isOpen = item.classList.contains("active");
-
-    document.querySelectorAll(".faq-item").forEach(i => {
-      i.classList.remove("active");
-      const btn = i.querySelector(".faq-question");
-      if (btn) btn.setAttribute("aria-expanded", "false");
-    });
-
-    if (!isOpen) {
-      item.classList.add("active");
-      question.setAttribute("aria-expanded", "true");
-    }
-  });
-});
-
-const heroEnrollBtn = document.getElementById("heroEnrollBtn");
-if (heroEnrollBtn) {
-  heroEnrollBtn.addEventListener("click", function () {
-    const heroPanel = document.querySelector(".hero-enquiry-panel");
-    if (heroPanel) {
-      heroPanel.scrollIntoView({ behavior: "smooth", block: "center" });
-    }
-  });
-}
-
-</script>
-
-<script type="text/javascript">
-  var s = document.createElement("script");
-  s.type = "text/javascript";
-  s.async = true;
-  s.src = "https://widgets.in8.nopaperforms.com/emwgts.js";
-  document.body.appendChild(s);
-</script>
-
-<script src="https://in8cdn.npfs.co/js/widget/npfwpopup.js"></script>
-<script>
-  let npfWf2c764c3812b71044805f88bf65c2b5a = new NpfWidgetsInit({
-    widgetId: "f2c764c3812b71044805f88bf65c2b5a",
-    baseurl: "widgets.in8.nopaperforms.com",
-    formTitle: "Enquiry Form",
-    titleColor: "#FF0033",
-    backgroundColor: "#ddd",
-    iframeHeight: "500px",
-    buttonbgColor: "#4c79dc",
-    buttonTextColor: "#FFF"
-  });
-</script>
-
-
