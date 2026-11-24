@@ -3686,6 +3686,17 @@ section {
   margin-bottom: 42px;
 }
 
+.faculty-subtitle {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0.55rem auto 0;
+  padding: 0 12px;
+  color: #5a5a6e;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
 .faculty-title {
   font-size: clamp(2.4rem, 4.5vw, 3.6rem);
   font-weight: 800;
@@ -3736,10 +3747,10 @@ section {
 }
 
 .faculty-member {
-  flex: 0 0 calc((100% - (4 * clamp(16px, 2vw, 24px))) / 5);
-  width: calc((100% - (4 * clamp(16px, 2vw, 24px))) / 5);
-  min-width: calc((100% - (4 * clamp(16px, 2vw, 24px))) / 5);
-  max-width: calc((100% - (4 * clamp(16px, 2vw, 24px))) / 5);
+  flex: 0 0 calc((100% - (3 * clamp(16px, 2vw, 24px))) / 4);
+  width: calc((100% - (3 * clamp(16px, 2vw, 24px))) / 4);
+  min-width: calc((100% - (3 * clamp(16px, 2vw, 24px))) / 4);
+  max-width: calc((100% - (3 * clamp(16px, 2vw, 24px))) / 4);
   text-align: center;
   scroll-snap-align: start;
 }
@@ -7288,4 +7299,118 @@ iframe {
   .hero-section .header-logos { gap: 0.4rem !important; }
   html body .hero-section .header-logos .header-logo-jgu,
   html body .hero-section .header-logos .header-logo-constitution { height: 2.3rem !important; max-height: 2.3rem !important; }
+}
+
+/* Museology Faculty — mobile gap / overflow polish (wins over earlier breakpoints) */
+@media screen and (max-width: 991px) {
+  .faculty-section {
+    padding: 40px 0 48px !important;
+  }
+
+  .faculty-header {
+    margin-bottom: 16px !important;
+  }
+
+  .faculty-subtitle {
+    margin-top: 0.35rem !important;
+    font-size: 0.95rem !important;
+    max-width: 22rem !important;
+    padding: 0 8px !important;
+  }
+
+  .faculty-slider-wrap {
+    padding: 0 28px !important;
+  }
+
+  .faculty-track {
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    padding: 4px 0 12px !important;
+    gap: 0 !important;
+    align-items: flex-start !important;
+  }
+
+  .faculty-member {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 4px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .faculty-photo-frame {
+    width: min(168px, 48vw) !important;
+    max-width: 168px !important;
+    margin: 0 auto 10px !important;
+  }
+
+  .faculty-photo {
+    max-width: 168px !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .faculty-name {
+    min-height: 0 !important;
+    margin: 0 0 6px !important;
+    padding: 0 8px !important;
+    font-size: 0.95rem !important;
+  }
+
+  .faculty-role {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 2px !important;
+    font-size: 0.78rem !important;
+    line-height: 1.4 !important;
+  }
+
+  .faculty-arrow {
+    width: 34px !important;
+    height: 34px !important;
+    top: 84px !important;
+    font-size: 14px !important;
+  }
+
+  .faculty-arrow.prev {
+    left: 0 !important;
+  }
+
+  .faculty-arrow.next {
+    right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .faculty-header {
+    margin-bottom: 12px !important;
+  }
+
+  .faculty-slider-wrap {
+    padding: 0 24px !important;
+  }
+
+  .faculty-photo-frame {
+    width: min(150px, 46vw) !important;
+    max-width: 150px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .faculty-photo {
+    max-width: 150px !important;
+  }
+
+  .faculty-arrow {
+    width: 32px !important;
+    height: 32px !important;
+    top: 75px !important;
+  }
+
+  .faculty-role {
+    font-size: 0.74rem !important;
+  }
 }
